@@ -27,13 +27,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="8dp"
-                android:text="6 Photos"
+                android:text="@string/dummy_photos"
                 android:gravity="center_vertical"
-                android:drawableLeft="@drawable/ic_collections_white_18dp"
+                android:drawableStart="@drawable/ic_collections_white_18dp"
                 android:drawablePadding="4dp"
                 android:textAppearance="#4D000000"
                 android:textColor="@android:color/white"
-                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
                 android:layout_marginBottom="16dp"
                 android:layout_gravity="bottom"/>
         </FrameLayout>
@@ -42,42 +42,42 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="32sp"
-            android:text="$735"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
+            android:text="@string/_735"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="8dp"
             android:textColor="@android:color/black"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Stok hanya 5 buah"
+            android:text="@string/stok_hanya_5_buah"
             android:textSize="12sp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/content_text"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             android:lineSpacingMultiplier="1"
             android:textColor="@android:color/black"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Spesifikasi"
+            android:text="@string/spesifikasi"
             android:textSize="12sp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginBottom="8dp"/>
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp">
             <TableRow
                 android:layout_width="match_parent"
@@ -87,8 +87,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
-                    android:layout_marginRight="16dp"
-                    android:text="Display"/>
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/display"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -105,8 +105,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
-                    android:layout_marginRight="16dp"
-                    android:text="Size"/>
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/size"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -123,8 +123,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
-                    android:layout_marginRight="16dp"
-                    android:text="Battery"/>
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/battery"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -134,5 +134,42 @@
                     android:textColor="@android:color/black"/>
             </TableRow>
         </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dijual_oleh"
+            android:textSize="12sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp">
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/photo_2"
+                android:layout_centerVertical="true"
+                android:id="@+id/profile_image"
+                android:layout_marginEnd="16dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/profile_image"
+                android:text="@string/narenda_wicaksono"
+                android:textColor="@android:color/black"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/beli"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"/>
     </LinearLayout>
 </ScrollView>

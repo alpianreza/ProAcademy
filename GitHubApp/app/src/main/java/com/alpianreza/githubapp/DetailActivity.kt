@@ -41,7 +41,6 @@ class DetailActivity : AppCompatActivity() {
         shareIntent.type = "text/plain"
         shareIntent.putExtra(Intent.EXTRA_TEXT, users.toString())
 
-        val  chooseIntent = Intent.createChooser(shareIntent, "Share Profile")
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

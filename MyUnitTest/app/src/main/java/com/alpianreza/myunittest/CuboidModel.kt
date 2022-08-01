@@ -1,9 +1,9 @@
 package com.alpianreza.myunittest
 
 class CuboidModel {
-    private val width = 0.0
-    private val length = 0.0
-    private val height = 0.0
+    private var width = 0.0
+    private var length = 0.0
+    private var height = 0.0
 
     fun getVolume(): Double = width * length * height
 
